@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adult BMI Calculator</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="flexbox-container-1">
+        <form class="flexbox-item box-1">
+            <button id="metric" style="border-radius: 5px; background-color: 
+            rgb(100, 160, 20); color: white;">Metric</button> 
+            <button id="imperical" style="border-radius: 5px;">Imperial</button>
+            <button id="refresh">Refresh</button>
+            <div>
+                <h3 class="h3height" id="h3height">Height</h3>
+                <input class="height" type="text" id="height" title="Enter only numbers" pattern="[\d]{1,4}" 
+                placeholder="cm" maxlength="3" style="border-radius: 5px; height: 25px" required>
+                
+                <input class="inches" type="text" id="inches" title="Enter only numbers" pattern="[\d]{2,4}" 
+                placeholder="inches" maxlength="3" style="border-radius: 5px; height: 25px" required>
+            </div>
+            <h3 class="h3weight" id="h3weight">Weight</h3>
+            <input class="weight" type="text" id="weight" title="Enter only numbers" pattern="[\d]{2,5}" 
+            placeholder="kg" maxlength="5" style="border-radius: 5px; height: 25px" required><br><br>
+            <button type="submit" id="submit">Submit</button>
+            <h3>Your BMI:</h3>
+            <div id="BMIdisplay" type="text"></div>
+        </form>
+        <div class="flexbox-item box-2">   
+            <div class="display" type="url" id="display"></div>
+        </div>
+    </div>
+    <div class="flexbox-container-2">
+        <div class="flexbox-item box-3">
+            <h4 class="textBMI" style="font-family: verdana; font-size: 15px solid; color: white;">
+                Result
+            </h4>
+        </div>
+        <table class="table">
+            <tbody>
+                <tr><td class="cinfoHd">Category</td><td class="cinfoHdL">BMI range - kg/m<sup>2</sup></td></tr>
+                <tr><td>Underweight</td><td class="cinfoBodL">&lt; 18.5</td></tr>
+                <tr><td>Normal</td><td class="cinfoBodL">18.5 - 24.9</td></tr>
+                <tr><td>Overweight</td><td class="cinfoBodL">25 - 29.9</td></tr>
+                <tr><td>Obese</td><td class="cinfoBodL">&gt; 30</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="/project.js"></script>
+</body>
+</html>
